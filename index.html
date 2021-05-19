@@ -3,32 +3,246 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="/site-3/site.webmanifest" />
+    <link rel="manifest" href="/favicons/manifest.json crossorigin="use-credentials>
+
     <title>Portfólio</title>
+
 </head>
 
 <body>
 
     <div class="container">
-        <header>
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>FECHAR</span>
+        </div>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="imagens/bg.jpg" alt>
             </div>
             <div class="banner">
-            <h1> Web Developer e End Designer</h1>
-            <p>Antonio Marlon</p>
-            <button>Saiba Mais</button>
-        </div>
+                <h1> Web Developer & Front End Designer</h1>
+                <p>Antonio Marlon</p>
+                <button>Saiba mais</button>
+            </div>
         </header>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#home" class="menu-link">HOME</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contatos" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </aside>
 
+        <section class="sessao-conhecimentos" id="conhecimentos">
+            <div class="sessao-header">
+                <h1>conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>Angular</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus aliquam
+                            explicabo molestiae nulla, minus nihil eaque earum accusantium dolorum minima! Repellendus
+                            placeat, voluptate mollitia explicabo repudiandae ipsa nam voluptates!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident recusandae commodi
+                            sapiente iure numquam harum iusto velit dolor. Doloribus nulla asperiores officiis?
+                            Consequuntur ex omnis cum perferendis ipsum dolore molestias.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>Html</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet corporis aspernatur minus.
+                            Rem aliquid repellat ducimus libero at necessitatibus dicta officiis atque similique tenetur
+                            dolorem, commodi, ab perferendis. Incidunt, commodi!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ad dolor quam ut earum
+                            obcaecati dolore aliquid ipsum? Saepe tenetur quae delectus mollitia magnam dolores odio
+                            labore exercitationem nemo.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rerum dignissimos
+                            repellendus atque sit libero, nemo, dolore aperiam magnam vel perspiciatis tenetur pariatur
+                            fugiat qui maxime explicabo, voluptate debitis porro./p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit, numquam, omnis ad
+                            reprehenderit atque veritatis aut corrupti commodi accusamus laudantium est velit at
+                            recusandae quae praesentium minima voluptatem quos.</p>
+                    </div>
+                </div>
+                <div class="conhecimento-img-wrapper">
+                    <img src="imagens/saturn.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-projetos" id="projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/site-3/imagens/proj1.jpg" alt="imagem do projeto Todo">
+                    </div>
+                    <div class="card-info">
+                        <h2>ToDo List</h2>
+                        <h3>Javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit tempore expedita
+                            asperiores, temporibus sed illum aperiam, inciduntra.</p>
+                        <button class="btn">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/site-3/imagens/proj2.jpg" alt="imagem da maratona">
+
+                    </div>
+                    <div class="card-info">
+                        <h2>Maratona</h2>
+                        <h3>HTML, CSS</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad aperiam quas, quaerat
+                            cumque laboriosam rem ut voluptatibus placeat nostrum vel officiis eum hic dolore aliquid
+                            quos tempore velit labore.</p>
+                        <button class="btn">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/site-3/imagens/proj3.jpg" alt="imagem do projeto Todo">
+                    </div>
+                    <div class="card-info">
+                        <h2>Casa Bela</h2>
+                        <h3>HTML</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad aperiam quas, quaerat
+                            cumque laboriosam rem ut voluptatibus placeat nostrum vel officiis eum hic dolore aliquid
+                            quos tempore velit labore.</p>
+                        <button class="btn">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sessao-contato" id="contatos">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="name">
+                            <label for="name" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Quantidade de páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js"> Preciso de um script Js</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy:2021, AMicro - Todos os Direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
-
 </body>
+<script src="script.js"></script>
 
 </html>
